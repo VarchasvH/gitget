@@ -1,113 +1,80 @@
+"use client";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import axios from "axios";
+import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
+  const [username, setUsername] = useState("");
+  const router = useRouter();
+
+  const handleUserSubmit = async () => {
+    if (username.trim() !== "") {
+      try {
+        // Check if the username exists in the GitHub API
+        const response = await axios.get(
+          `https://api.github.com/users/${username}`
+        );
+
+        if (response.status === 200) {
+          // Username found, redirect to the user page
+          router.push(`/user/${username}`);
+        } else {
+          // Username not found, handle the error
+          console.error("User not found");
+          router.push("/error");
+        }
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+        router.push("/error");
+      }
+    }
+  };
+
+  const handleInputChange = (e: any) => {
+    setUsername(e.target.value);
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className='bg-slate-800 flex flex-col justify-center items-center min-h-screen'>
+      <Image
+        src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxjaXJjbGUgY3g9IjI4IiBjeT0iMjgiIHI9IjE4IiBmaWxsPSIjOWZhOGRhIj48L2NpcmNsZT48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMxODE5M2YiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIzIiBkPSJNMzUuMDU0LDM4LjgzNglDMzEuOTcsNDEuMTM3LDI4LjE0NCw0Mi41LDI0LDQyLjVDMTMuNzgzLDQyLjUsNS41LDM0LjIxNyw1LjUsMjRjMC0yLjkxNywwLjY3NS01LjY3NiwxLjg3OC04LjEzIj48L3BhdGg+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTgxOTNmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMyIgZD0iTTEzLjg2OSw4LjUxOAlDMTYuNzc5LDYuNjEsMjAuMjYsNS41LDI0LDUuNWMxMC4yMTcsMCwxOC41LDguMjgzLDE4LjUsMTguNWMwLDIuOTQxLTAuNjg2LDUuNzIxLTEuOTA3LDguMTkiPjwvcGF0aD48cGF0aCBmaWxsPSIjMTgxOTNmIiBkPSJNMzQsMjNjMC0xLjU3NC0wLjU3Ni0zLjAzOC0xLjU1OC00LjI3NWMwLjQ0Mi0xLjM2OCwwLjkzLTMuNzcxLTAuMjQyLTUuNjQ4CWMtMi4yNTEsMC0zLjczLDEuNTQ1LTQuNDM2LDIuNTE0QzI2LjYwMiwxNS4yMTMsMjUuMzMzLDE1LDI0LDE1cy0yLjYwMiwwLjIxMy0zLjc2NCwwLjU5MWMtMC43MDYtMC45NjktMi4xODQtMi41MTQtNC40MzYtMi41MTQJYy0xLjMyOCwyLjEyNi0wLjUyNiw0LjQ1LTAuMDczLDUuNDNDMTQuNjM4LDE5Ljc4OCwxNCwyMS4zMzQsMTQsMjNjMCwzLjc4LDMuMjgxLDYuOTQsNy42ODYsNy43NzYJYy0xLjMwOSwwLjY3My0yLjI4NywxLjg5Ni0yLjU4NywzLjM4aC0xLjMxNWMtMS4yOTcsMC0xLjgwMS0wLjUyNi0yLjUwMi0xLjQxNWMtMC42OTItMC44ODktMS40MzctMS40ODgtMi4zMzEtMS43MzYJYy0wLjQ4Mi0wLjA1MS0wLjgwNiwwLjMxNi0wLjM4NiwwLjY0MWMxLjQxOSwwLjk2NiwxLjUxNiwyLjU0OCwyLjA4NSwzLjU4M0MxNS4xNjgsMzYuMTYxLDE2LjIyOSwzNywxNy40MjksMzdIMTl2NS45NDJoMTB2LTcuODA2CWMwLTEuOTA4LTEuMDk4LTMuNTQ0LTIuNjg2LTQuMzZDMzAuNzE5LDI5Ljk0LDM0LDI2Ljc4LDM0LDIzeiI+PC9wYXRoPgo8L3N2Zz4='
+        alt='Github icon'
+        width={200}
+        height={200}
+      />
+      <h1 className='text-5xl font-semibold text-[#9fa8da] p-7'>
+        Find Your Profile
+      </h1>
+      <Input
+        type='text'
+        className='outline-none border-none bg-slate-700 w-2/6 h-16 px-6 rounded-sm text-center font-mono text-4xl text-[#9fa8da]'
+        placeholder='Username'
+        value={username}
+        onChange={handleInputChange}
+      />
+      <Button
+        type='submit'
+        className='m-5 w-44 h-14 text-lg text-[#9fa8da]'
+        onClick={handleUserSubmit}
+      >
+        Search
+      </Button>
+
+      <div className='bg-slate-900 lg:text-left  mt-16 text-[#9fa8da] text-center text-surface dark:text-white text-2xl font-mono font-extrabold rounded-xl p-8'>
+        Made By{" "}
+        <Link
+          href='https://github.com/VarchasvH'
+          className='hover:text-[#8595ee]'
+        >
+          VarchasvH
+        </Link>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Home;
