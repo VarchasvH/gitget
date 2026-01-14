@@ -25,7 +25,7 @@ Hi everyone, this is a **list of hand-picked data engineering, DSA, and SQL ques
 3. [SQL Advanced](https://leetcode.com/problem-list/weh9s95t/) **\-** 10 questions focusing a bit more on FAANG companies.
     
 
-**<mark>PSA - Some of these questions are paid, but there are many ways to get around it😊.</mark>**
+**<mark>FYI - Some of these questions are paid, but there are many ways to get around it😊.</mark>**
 
 ---
 
