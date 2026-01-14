@@ -5,7 +5,7 @@ seoDescription: "Learn to combine two tables using SQL in LeetCode's "Combine Tw
 datePublished: Tue Jan 13 2026 08:15:28 GMT+0000 (Coordinated Universal Time)
 cuid: cmkcbh6yc000102jjhrno0e64
 slug: leetcode-175-combine-two-tables-easy
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768381811192/c21aec59-147f-445d-a577-2497f700773f.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768381967703/bd4295ac-1aa4-4993-828e-c91461d4f086.png
 tags: sql, leetcode, dataengineering, build-in-public, dequest
 
 ---
