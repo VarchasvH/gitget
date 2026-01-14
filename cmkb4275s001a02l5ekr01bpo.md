@@ -16,7 +16,7 @@ Hi everyone, this is a **list of hand-picked data engineering, DSA, and SQL ques
 
 ## SQL - Bread and Butter
 
-**SQL is undoubtedly the most important skill to have as a data engineer**, so we are going to focus on this first. We will go through three different levels of problems: **Basics, Intermediate, and Advanced**, covering a total of 50 questions.
+**SQL is undoubtedly the most important skill to have as a data engineer**, so we are going to focus on this first. We will go through three different levels of problems: **Basics, intermediate, and Advanced**, covering a total of 50 questions.
 
 1. [**SQL Basics**](https://leetcode.com/problem-list/wehxh2aj/) **\-** 15 questions to help you build a strong foundation in SQL.
     
@@ -25,7 +25,7 @@ Hi everyone, this is a **list of hand-picked data engineering, DSA, and SQL ques
 3. [SQL Advanced](https://leetcode.com/problem-list/weh9s95t/) **\-** 10 questions focusing a bit more on FAANG companies.
     
 
-**<mark>FYI - Some of these questions are paid, but there are many ways to get around it😊.</mark>**
+**<mark>FYI - Some of these questions are paid, but there are many ways to get around it 😊.</mark>**
 
 ---
 
