@@ -6,7 +6,7 @@ datePublished: Mon Jan 12 2026 12:00:05 GMT+0000 (Coordinated Universal Time)
 cuid: cmkb4275s001a02l5ekr01bpo
 slug: 80-data-engineering-interview-questions-sql-and-python-guide-2026
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768238407745/d123246b-e248-4883-af46-251b883d4fa0.png
-tags: python, databases, sql, dsa, dataengineering
+tags: python, databases, sql, dsa, dataengineering, build-in-public, dequest
 
 ---
 
