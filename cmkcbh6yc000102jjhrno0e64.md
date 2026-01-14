@@ -1,5 +1,5 @@
 ---
-title: "LeetCode 175: Combine Two Tables - Easy"
+title: "LeetCode 175: Combine Two Tables"
 seoTitle: "SQL Basics: Combining Tables in LeetCode 175"
 seoDescription: "Learn to combine two tables using SQL in LeetCode's "Combine Two Tables" challenge. Explore the approach, solution, and lessons learned"
 datePublished: Tue Jan 13 2026 08:15:28 GMT+0000 (Coordinated Universal Time)
@@ -35,7 +35,7 @@ Return the result table in **any order**.
 It looked like a pretty basic inner join at first glance, as we needed only 2 columns from each table, but it resulted in the wrong solution because we also need null values in case `personId` is not present in the `Address` table.
 
 **Final solution:**  
-I used **left join instead of inner join** to combine the tables.
+<mark>I used </mark> **<mark>left join instead of inner join</mark>** <mark> to combine the tables.</mark>
 
 **Why this works:**  
 This works because the left join will also include the values that are null along with the common values.
