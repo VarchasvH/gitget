@@ -5,6 +5,7 @@ seoDescription: "Learn how to solve LeetCode's "Contains Duplicate" problem usin
 datePublished: Tue Jan 13 2026 09:54:31 GMT+0000 (Coordinated Universal Time)
 cuid: cmkcf0koe000202joehy874by
 slug: leetcode-217-contains-duplicates-easy
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768381750659/28e1bee8-54f6-42f5-a1c0-931756ffb3c5.png
 tags: python, dsa, leetcode, dataengineering, dequest
 
 ---
