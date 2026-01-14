@@ -1,11 +1,11 @@
 ---
-title: "LeetCode 217: Contains Duplicates - Easy"
+title: "LeetCode 217: Contains Duplicates"
 seoTitle: "Contains Duplicates: LeetCode 217 Solution"
 seoDescription: "Learn how to solve LeetCode's "Contains Duplicate" problem using arrays, loops, HashMaps, and Sets efficiently with explained solutions"
 datePublished: Tue Jan 13 2026 09:54:31 GMT+0000 (Coordinated Universal Time)
 cuid: cmkcf0koe000202joehy874by
 slug: leetcode-217-contains-duplicates-easy
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768381987110/cb919810-6744-4b9b-95f2-2e90f5ec5838.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768385206057/2fb1f6b4-78b6-483f-9cc2-0d78c639a5b9.png
 tags: python, dsa, leetcode, dataengineering, dequest
 
 ---
