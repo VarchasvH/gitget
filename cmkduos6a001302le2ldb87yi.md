@@ -35,7 +35,7 @@ Write a solution to find the second highest **distinct** salary from the `Emplo
     
 
 **Final solution:**  
-The best solution would be to use **DENSE\_RANK()** and give every different salary a different rank, and we can just get the salary whose rank = 2. But it **would still not return null**; to accomplish that, we will **add a SELECT statement wrapper** at the end.
+<mark>The best solution would be to use </mark> **<mark>DENSE_RANK()</mark>** <mark> and give every different salary a different rank, and we can just get the salary whose rank = 2. But it </mark> **<mark>would still not return null</mark>**<mark>; to accomplish that, we will </mark> **<mark>add a SELECT statement wrapper</mark>** <mark> at the end.</mark>
 
 **Why this works:**  
 This works because this is a **scalable solution**; we just need to change the value of rank, and we can get the Nth highest salary.
