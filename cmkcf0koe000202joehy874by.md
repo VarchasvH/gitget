@@ -28,21 +28,21 @@ Given an integer array `nums`, return `true` if any value appears **at least twi
 
 **Initial thought:**
 
-* I could do a **nested loop on the list**, that will check for duplicates and whenever it finds a duplicate it will return **True** otherwise **False**. But this approach will have a **time complexity of O(N<sup>2</sup>)** and **space complexity of O(1)** because I am not storing anything. This is the Brute Force method.
+* I could do a **nested loop on the list** that will check for duplicates, and whenever it finds a duplicate, it will return **True**; otherwise, **False**. But this approach will have a **time complexity of O(N<sup>2</sup>)** and **space complexity of O(1)** because I am not storing anything. This is the brute force method.
     
-* We can also **sort the list** first and do **compare adjacent elements** for duplicates. This solution will have **time complexity of O(N LogN)** and **space complexity of O(N).**
+* We can also **sort the list** first and **compare adjacent elements** for duplicates. This solution will have a **time complexity of O(N LogN)** and a **space complexity of O(N).**
     
-* One more solution could be to **create a HashMap** and check for duplicates while adding num from `nums` to the HashMap, if we find any duplicates we return **True** otherwise **False**. This solution will have **time complexity of O(N)** and **space complexity of O(N)** as HashMap has constant lookup time.
+* One more solution could be to **create a HashMap** and check for duplicates while adding num from `nums` to the HashMap; if we find any duplicates, we return **True**; otherwise, **False**. This solution will have a **time complexity of O(N)** and a **space complexity of O(N),** as HashMap has constant lookup time.
     
 
 **Final solution:**  
-<mark>The best solution would be to </mark> **<mark>compare the len of</mark>** `nums` **<mark>list and the length of the set of</mark>** `nums` **<mark>list</mark>**<mark>. If they are equal we return </mark> **<mark>False</mark>** <mark> as every value is distinct, else we return </mark> **<mark>True</mark>**<mark>.</mark>
+<mark>The best solution would be to </mark> **<mark>compare the length of</mark>** `nums` **<mark>list and the length of the set of</mark>** `nums` **<mark>list</mark>**<mark>. If they are equal, we return </mark> **<mark>False,</mark>** <mark>as every value is distinct; else, we return </mark> **<mark>True</mark>**<mark>.</mark>
 
 **Why this works:**
 
 * Sets are better optimized to check uniqueness.
     
-* They have a Average Lookup time of O(1).
+* They have an average lookup time of O(1).
     
 
 ---
