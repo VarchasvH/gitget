@@ -5,7 +5,7 @@ seoDescription: "Learn to combine two tables using SQL in LeetCode's "Combine Tw
 datePublished: Tue Jan 13 2026 08:15:28 GMT+0000 (Coordinated Universal Time)
 cuid: cmkcbh6yc000102jjhrno0e64
 slug: leetcode-175-combine-two-tables-easy
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768381967703/bd4295ac-1aa4-4993-828e-c91461d4f086.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768384990273/9cbf52bc-cdec-497d-956c-80ef3574a96d.png
 tags: sql, leetcode, dataengineering, build-in-public, dequest
 
 ---
@@ -32,10 +32,10 @@ Return the result table in **any order**.
 ## My Approach
 
 **Initial thought:**  
-It looked like a pretty basic inner join at first glance as we needed only 2 columns from each table, but it resulted in the wrong solution because we also need null values in case `personId` is not present in the `Address` table.
+It looked like a pretty basic inner join at first glance, as we needed only 2 columns from each table, but it resulted in the wrong solution because we also need null values in case `personId` is not present in the `Address` table.
 
 **Final solution:**  
-I used **Left join instead of Inner join** to combine the tables.
+I used **left join instead of inner join** to combine the tables.
 
 **Why this works:**  
 This works because the left join will also include the values that are null along with the common values.
@@ -51,11 +51,11 @@ LEFT JOIN Address AS A
 USING (personId)
 ```
 
-**Key Takeaway** Importance of Left and Right joins.
+**Key Takeaway:** Importance of Left and Right Joins.
 
 **Pattern**: Table Join
 
-**Mistakes I Made** Chose Inner Join instead of left join.
+**Mistakes I Made:** Chose Inner Join instead of Left Join.
 
 **Series**: 90 Days of Data Engineering Progress: 1/90 problems completed
 
