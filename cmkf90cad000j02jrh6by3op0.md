@@ -5,6 +5,7 @@ seoDescription: "Learn how to identify employees earning more than their manager
 datePublished: Thu Jan 15 2026 09:29:41 GMT+0000 (Coordinated Universal Time)
 cuid: cmkf90cad000j02jrh6by3op0
 slug: leetcode-181-employees-earning-more-than-their-managers
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768484021504/f08da248-bf46-44dd-9fb6-a0e0ab053e21.png
 tags: sql, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 
 ---
@@ -47,11 +48,11 @@ ON m.id = e.managerId
 WHERE e.salary > m.salary
 ```
 
-**Key Takeaway** Self-joins and their usefullness.
+**Key Takeaway:** Self-joins and their usefulness.
 
 **Pattern**: Self-join
 
-**Mistakes I Made** None, it was pretty straight-forward.
+**Mistakes I Made:** None. It was pretty straight-forward.
 
 **Series**: 90 Days of Data Engineering Progress: 5/90 problems completed
 
