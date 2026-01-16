@@ -1,5 +1,7 @@
 ---
 title: "LeetCode 182: Duplicate Emails"
+seoTitle: "Find Duplicate Emails in SQL"
+seoDescription: "Learn how to identify duplicate emails using SQL's HAVING clause and GROUP BY for efficient data queries"
 datePublished: Fri Jan 16 2026 07:19:38 GMT+0000 (Coordinated Universal Time)
 cuid: cmkgjsxjr001702joa4vc35tm
 slug: leetcode-182-duplicate-emails
