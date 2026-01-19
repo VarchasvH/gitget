@@ -11,7 +11,7 @@ tags: mysql, sql, leetcode, leetcode-solution, varchasvh, 90dayschallenge, deque
 
 **Date:** January 19, 2026  
 **Category:** SQL  
-**Time Taken:** minutes  
+**Time Taken:** 10 minutes  
 **Difficulty:** Easy
 
 ---
@@ -26,11 +26,9 @@ Write a solution to find all customers who never order anything.
 
 ## My Approach
 
-**Initial thought:**
-Since we only need the names of customers who have never ordered, we can perform a left join on the `customers` and `orders` tables using `customers.id = orders.customerId`. Then, we can use the `WHERE` clause to find customers who have no `order.id`.
+**Initial thought:** Since we only need the names of customers who have never ordered, we can perform a left join on the `customers` and `orders` tables using `customers.id = orders.customerId`. Then, we can use the `WHERE` clause to find customers who have no `order.id`.
 
-**Final solution:**
-A more efficient solution is to use `NOT EXISTS` with a subquery instead of a join. With this method, as soon as we find a customer with any orders, we can skip to the next customer. This saves time by not having to check all the data for each customer.
+**Final solution:** A more efficient solution is to use `NOT EXISTS` with a subquery instead of a join. With this method, as soon as we find a customer with any orders, we can skip to the next customer. This saves time by not having to check all the data for each customer.
 
 **Why this works:**  
 This works because as soon as we find any `order.id` for a customer, we stop looking for customers with no orders and move on to the next customer. This saves time.
