@@ -1,5 +1,5 @@
 ---
-title: "LeetCode 183: Customers Who Never Order."
+title: "LeetCode 183: Customers Who Never Order"
 seoTitle: "Find Customers Without Orders"
 seoDescription: "Learn to find customers who never order using SQL with both a left join and a NOT EXISTS approach"
 datePublished: Mon Jan 19 2026 07:36:23 GMT+0000 (Coordinated Universal Time)
