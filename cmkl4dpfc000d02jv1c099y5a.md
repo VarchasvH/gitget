@@ -78,6 +78,6 @@ Space: O(N)
 
 **Mistakes I Made:** Did not even figure out a brute force solution.
 
-**Series**: 90 Days of Data Engineering Progress: 8/90 problems completed
+**Series**: 90 Days of Data Engineering Progress: 10/90 problems completed
 
 **Tags**: #DEQuest #LeetCode #Python #DataEngineering #BuildInPublic
