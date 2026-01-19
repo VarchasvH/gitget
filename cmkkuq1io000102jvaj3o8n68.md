@@ -63,6 +63,6 @@ WHERE NOT EXISTS (
 
 **Mistakes I Made**: There were no mistakes to mention. I simply wasn't aware of the optimized solution for this.
 
-**Series**: 90 Days of Data Engineering Progress: 7/90 problems completed
+**Series**: 90 Days of Data Engineering Progress: 9/90 problems completed
 
 **Tags**: #DEQuest #LeetCode #SQL #DataEngineering #BuildInPublic
