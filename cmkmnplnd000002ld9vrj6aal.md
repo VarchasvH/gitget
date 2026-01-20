@@ -5,6 +5,7 @@ seoDescription: "Tackle LeetCode 238 with a non-division O(n) solution for the p
 datePublished: Tue Jan 20 2026 13:55:38 GMT+0000 (Coordinated Universal Time)
 cuid: cmkmnplnd000002ld9vrj6aal
 slug: leetcode-238-product-of-array-except-self
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768920162747/18d6f4d6-c6cc-4221-aabd-5ac25323e701.png
 tags: python, data-engineering, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 
 ---
