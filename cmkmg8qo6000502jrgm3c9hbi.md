@@ -5,6 +5,7 @@ seoDescription: "Use `ROW_NUMBER()` and self-join methods to delete duplicate em
 datePublished: Tue Jan 20 2026 10:26:34 GMT+0000 (Coordinated Universal Time)
 cuid: cmkmg8qo6000502jrgm3c9hbi
 slug: leetcode-196-delete-duplicate-emails
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768920097955/e197f445-bfdd-4540-91c0-a8cc994eb769.png
 tags: sql, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 
 ---
