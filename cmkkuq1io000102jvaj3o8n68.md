@@ -5,6 +5,7 @@ seoDescription: "Learn to find customers who never order using SQL with both a l
 datePublished: Mon Jan 19 2026 07:36:23 GMT+0000 (Coordinated Universal Time)
 cuid: cmkkuq1io000102jvaj3o8n68
 slug: leetcode-183-customers-who-never-order
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768919948835/12d07f24-869f-440f-a085-e736fd4ff68f.png
 tags: mysql, sql, leetcode, leetcode-solution, varchasvh, 90dayschallenge, dequest
 
 ---
