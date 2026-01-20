@@ -5,6 +5,7 @@ seoDescription: "Learn how to identify duplicate emails using SQL's HAVING claus
 datePublished: Fri Jan 16 2026 07:19:38 GMT+0000 (Coordinated Universal Time)
 cuid: cmkgjsxjr001702joa4vc35tm
 slug: leetcode-182-duplicate-emails
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768919810815/ab681919-b290-49a1-90d0-85bbac40b424.png
 tags: sql, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 
 ---
