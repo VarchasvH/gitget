@@ -5,6 +5,7 @@ seoDescription: "Group anagrams using efficient methods like sorted strings and 
 datePublished: Fri Jan 16 2026 08:12:19 GMT+0000 (Coordinated Universal Time)
 cuid: cmkglooqy000402l5flazeoiw
 slug: leetcode-49-group-anagrams
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768919879138/d57e8d3a-a9c2-4b84-89a6-4ef613bbe34e.png
 tags: python, leetcode, build-in-public, varchasvh, dequest
 
 ---
