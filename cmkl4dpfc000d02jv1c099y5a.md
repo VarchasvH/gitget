@@ -5,6 +5,7 @@ seoDescription: "Learn how to solve LeetCode 347: Top K Frequent Elements using 
 datePublished: Mon Jan 19 2026 12:06:44 GMT+0000 (Coordinated Universal Time)
 cuid: cmkl4dpfc000d02jv1c099y5a
 slug: leetcode-347-top-k-frequent-elements
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1768920022919/20c4cc28-9ab6-4487-ab8d-347776ddae9a.png
 tags: python, data-engineering, leetcode, build-in-public, varchasvh, dequest
 
 ---
@@ -34,7 +35,7 @@ Given an integer array `nums` and an integer `k`, return *the* `k` *most frequen
     
 * After this, create `freq` a list of lists that will store all the numbers that appeared times equal to index as a list. Fix the length of `freq` to be equal to `len(nums) + 1` .
     
-* Create a list `resultList` that will store all the top k elements, we will start the for loop at the end of `freq` till we reach 0 index. Inside this make another for loop that will loop in the internal list of `freq` and append the numbers in to the `resultList`.
+* Create a list `resultList` that will store all the top k elements, we will start the for loop at the end of `freq` until we reach 0 index. Inside this make another for loop that will loop in the internal list of `freq` and append the numbers in to the `resultList`.
     
 
 This is called Bucket Sort solution.
