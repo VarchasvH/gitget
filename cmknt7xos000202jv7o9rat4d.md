@@ -5,6 +5,7 @@ seoDescription: "Learn to solve LeetCode's Rising Temperature with SQL using sel
 datePublished: Wed Jan 21 2026 09:17:37 GMT+0000 (Coordinated Universal Time)
 cuid: cmknt7xos000202jv7o9rat4d
 slug: leetcode-197-rising-temperature
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769012657689/f408cd58-4db3-4026-b6d5-7962fe127d6e.png
 tags: sql, leetcode, dataengineering, build-in-public, varchasvh, dequest
 
 ---
