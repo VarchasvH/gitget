@@ -11,7 +11,7 @@ tags: sql, leetcode, dataengineering, build-in-public, varchasvh, dequest
 
 **Date:** January 21, 2026  
 **Category:** SQL  
-**Time Taken:** minutes  
+**Time Taken:** 15 minutes  
 **Difficulty:** Easy
 
 ---
