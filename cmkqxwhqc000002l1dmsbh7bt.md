@@ -28,11 +28,11 @@ Given a string `s`, find the length of the **longest** **substring** without dup
 
 ## **Solution 1 (Brute-Force):**
 
-The brute-force solution would be check each and every possible substring using nested for loop, but that would be O(N2) so it’s not appropriate.
+The brute-force solution would be check each and every possible substring using nested for loop, but that would beO(N²) so it’s not appropriate.
 
 ---
 
-## **Solution 1 (Window + Set) \[Better\]:**
+## **Solution 2 (Window + Set) \[Better\]:**
 
 * We use a set to keep track of values we have already seen to ensure every character in our current window is unique.
     
@@ -68,7 +68,7 @@ Time: O(N) Space: O(N)
 
 ---
 
-## Solution 2 (Window + HashMap) \[Best\]
+## Solution 3 (Window + HashMap) \[Best\]
 
 * Instead of a set, we use a **HashMap** (or dictionary) to store each character as a key and its **index** as the value.
     
