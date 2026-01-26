@@ -5,6 +5,7 @@ seoDescription: "Find the length of the longest substring without repeating char
 datePublished: Fri Jan 23 2026 13:52:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmkqxwhqc000002l1dmsbh7bt
 slug: leetcode-3-longest-substring-without-repeating-characters
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769420768107/c2957cd0-c7f9-46b9-92af-b8466fe15a65.png
 tags: python, leetcode, build-in-public, leetcode-solution, dequest
 
 ---
