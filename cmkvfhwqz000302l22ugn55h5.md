@@ -11,8 +11,8 @@ tags: python, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 ---
 
 **Date:** January 26, 2026  
-**Category:** Arrays  
-**Time Taken:** minutes  
+**Category:** Substring  
+**Time Taken:** 60 minutes  
 **Difficulty:** Medium
 
 ---
