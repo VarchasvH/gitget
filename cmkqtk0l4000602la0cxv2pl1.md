@@ -5,6 +5,7 @@ seoDescription: "Solved LeetCode 577 Employee Bonus using SQL left join to list 
 datePublished: Fri Jan 23 2026 11:50:20 GMT+0000 (Coordinated Universal Time)
 cuid: cmkqtk0l4000602la0cxv2pl1
 slug: leetcode-577-employee-bonus
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769447952198/554b04f8-cc5c-4203-ba93-f2b32c0d1484.png
 tags: mysql, sql, data-engineering, leetcode, leetcode-solution, varchasvh, dequest
 
 ---
