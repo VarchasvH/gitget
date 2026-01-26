@@ -5,7 +5,7 @@ seoDescription: "Learn how to find customer names either not referred by custome
 datePublished: Mon Jan 26 2026 10:00:18 GMT+0000 (Coordinated Universal Time)
 cuid: cmkuzy2qw000402laavojepg1
 slug: leetcode-584-find-customer-referee
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769421575351/57032c03-75da-4a4d-943c-d80bde6b16a2.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769447897589/947850d7-06db-4d29-b77c-7bf32cbc1809.png
 tags: sql, leetcode, build-in-public, leetcode-solution, dequest
 
 ---
