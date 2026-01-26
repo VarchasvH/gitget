@@ -5,6 +5,7 @@ seoDescription: "Find the first login date for each player using SQL window func
 datePublished: Thu Jan 22 2026 12:51:31 GMT+0000 (Coordinated Universal Time)
 cuid: cmkpgauib000z02k1cslma9cg
 slug: leetcode-511-game-play-analysis-i
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769420914634/868ef112-497f-4a7f-a183-b46742340f29.png
 tags: sql, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 
 ---
