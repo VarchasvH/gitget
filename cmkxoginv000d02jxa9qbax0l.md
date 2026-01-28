@@ -36,7 +36,7 @@ Since we need to count the students in each class, we will use `GROUP BY` on the
 SELECT class
 FROM Courses
 GROUP BY class
-HAVING COUNT(*) >= 5
+HAVING COUNT(DISTINCT student) >= 5
 ```
 
 **Key Takeaway:** Nothing, very easy problem.
