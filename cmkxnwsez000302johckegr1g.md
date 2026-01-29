@@ -5,6 +5,7 @@ seoDescription: "Find SQL solutions for identifying big countries with populatio
 datePublished: Wed Jan 28 2026 06:46:41 GMT+0000 (Coordinated Universal Time)
 cuid: cmkxnwsez000302johckegr1g
 slug: leetcode-595-big-countries
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769678611425/d3cf09d5-7cbc-431e-bc80-bd97b9beb1ea.png
 tags: sql, leetcode, leetcode-solution, varchasvh, dequest
 
 ---
