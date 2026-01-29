@@ -5,6 +5,7 @@ seoDescription: "Reverse a singly linked list using iterative and recursive appr
 datePublished: Tue Jan 27 2026 11:40:23 GMT+0000 (Coordinated Universal Time)
 cuid: cmkwiymmj000c02ju1lxvelvi
 slug: leetcode-206-reverse-linked-list
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769678674212/d6d8ca4b-3926-42d8-99f2-c2a7cd3fb0fa.png
 tags: python, leetcode, build-in-public, leetcode-solution, varchasvh, dequest
 
 ---
