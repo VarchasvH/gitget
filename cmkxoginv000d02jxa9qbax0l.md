@@ -5,6 +5,7 @@ seoDescription: "Find out how to list classes with a minimum of five students us
 datePublished: Wed Jan 28 2026 07:02:02 GMT+0000 (Coordinated Universal Time)
 cuid: cmkxoginv000d02jxa9qbax0l
 slug: leetcode-596-classes-with-at-least-5-students
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1769678712497/8e9a7992-06e5-4198-809d-421bc8c2ee68.png
 tags: sql, leetcode, leetcode-solution, varchasvh, dequest
 
 ---
