@@ -9,21 +9,10 @@ tags: mysql, sql, leetcode, leetcode-solution, varchasvh, dequest
 
 ---
 
-```sql
-CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
-BEGIN
-  RETURN (
-    SELECT DISTINCT salary AS getNthHighestSalary
-    FROM (
-        SELECT 
-            id, 
-            salary, 
-            DENSE_RANK() OVER(ORDER BY salary DESC) AS rnk
-        FROM Employee) AS ranks
-    WHERE rnk = N
-  );
-END
-```
+**Date:** February 02, 2026  
+**Category:** SQL  
+**Time Taken:** 10 minute  
+**Difficulty:** Medium
 
 ---
 
