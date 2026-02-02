@@ -43,6 +43,6 @@ ORDER BY rating DESC
 
 **Mistakes I Made:** Very easy problem.
 
-**Series**: 90 Days of Data Engineering Progress: 28/90 problems completed
+**Series**: 90 Days of Data Engineering Progress: 27/90 problems completed
 
 **Tags**: #DEQuest #LeetCode #SQL #DataEngineering #BuildInPublic
