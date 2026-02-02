@@ -11,29 +11,29 @@ tags: python, leetcode, leetcode-solution, varchasvh, dequest
 
 **Date:** February 02, 2026  
 **Category:** Arrays | Binary Search  
-**Time Taken:** 30 minutes  
+**Time Taken:** 15 minutes  
 **Difficulty:** Easy
 
 ---
 
 # Problem Statement
 
-Given an integer array `nums`, return *an array* `answer` *such that* `answer[i]` *is equal to the product of all the elements of* `nums` *except* `nums[i]`.
+Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.
 
-The product of any prefix or suffix of `nums` is **guaranteed** to fit in a **32-bit** integer.
+You must write an algorithm with `O(log n)` runtime complexity.
 
-You must write an algorithm that runs in `O(n)` time and without using the division operation.
-
-**Link:** [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/?envType=problem-list-v2&envId=wehoe3hj)
+**Link:** [Binary Search](https://leetcode.com/problems/binary-search/description/?envType=problem-list-v2&envId=wac3gye6)
 
 ---
 
 # **Solution 1 (HashMap):**
 
-* * We could use a HashMap to associate each value with its index.
-        
-    * Then, we can check if the target is in the HashMap. If it is, we return the index; if not, we return -1..
-        
+* We could use a HashMap to associate each value with its index.
+    
+* Then, we can check if the target is in the HashMap. If it is, we return the index; if not, we return -1.
+    
+* <mark>This solution is not </mark> **<mark>Not O(logN).</mark>**
+    
 
 ## Solution Code
 
