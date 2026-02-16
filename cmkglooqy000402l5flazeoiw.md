@@ -46,9 +46,6 @@ The most “optimal” solution would be to count the total number of characters
 * Convert this `charFreq` to a tuple and use it as a key for our HashMap.
     
 
-**Why this works:**  
-\[Key insight that makes this solution work\]
-
 ---
 
 ## Solution Code (Sorted String method)
