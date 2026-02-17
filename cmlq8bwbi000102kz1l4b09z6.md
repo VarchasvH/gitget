@@ -9,9 +9,9 @@ tags: mysql, sql, leetcode, leetcode-solution, varchasvh, dequest
 
 ---
 
-**Date:** February 16, 2026  
+**Date:** February 17, 2026  
 **Category:** SQL  
-**Time Taken:** 15 minutes  
+**Time Taken:** 30 minutes  
 **Difficulty:** Hard
 
 ---
